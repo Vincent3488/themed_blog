@@ -275,7 +275,7 @@ blockquote {
 }
 
 .btn-grey {
-  background: #f87171;
+  background: #2b8282;
   border-color: #E38A90;
   color: #fff;
 }
@@ -299,11 +299,11 @@ blockquote {
 }
 
 .text-color {
-  color: #f87171;
+  color: #2b8282;
 }
 
 .bg-grey {
-  background: #F0e2db;
+  background: #E38A90;
 }
 
 .gray-bg {
@@ -405,7 +405,7 @@ blockquote {
 }
  
 .navbar-nav .nav-link:hover {
-  color: #E38A90 !important;
+  color: #f0ebd9 !important;
 }
 
 
@@ -433,12 +433,16 @@ blockquote {
   color: #fff;
 }
 .header-socials-2 a {
-  padding: 0px 5px;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.7);
-  
-  
+    padding: 0px 5px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7); /* Default color */
 }
+
+.header-socials-2 a:hover {
+    color: #f0ebd9 !important; /* Changes color to white on hover */
+}
+
+  
 
 .search a {
   color: #000;
@@ -1057,7 +1061,16 @@ overlay search
 
 .subscribe-home .form-control {
   background: #fff;
+  
 }
+
+.subscribe-home {
+  background-color: #2b8282;  /* Set background color to blue */
+  border-radius: 20px;     /* Set border-radius to 10px */
+  padding: 20px;           /* Add padding for spacing inside the container */
+}
+
+
 
 .post-quote {
   padding: 60px 40px;
@@ -1212,7 +1225,7 @@ overlay search
 
 .sidebar-widget.category li span {
   display: inline-block;
-  background: #E38A90;
+  background: #f87171;
   color: #fff;
   width: 30px;
   height: 30px;
@@ -1243,7 +1256,7 @@ overlay search
 }
 
 .follow-socials a:hover {
-  background: #E38A90;
+  background: rgb(228, 72, 72);
   color: #fff;
 }
 
@@ -1292,7 +1305,7 @@ overlay search
 }
 
 .pagination ul li a.active {
-  background: #E38A90;
+  background: #2b8282;
   color: #fff;
   border-color: #E38A90;
 }
