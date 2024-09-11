@@ -982,7 +982,9 @@ overlay search
 .category-item .category-img {
   overflow: hidden;
   position: relative;
-  border-radius: 15px;
+  border-radius: 10px;
+  height: 300px;
+
 }
 
 .category-item .category-img img {
@@ -994,6 +996,7 @@ overlay search
 .category-item .category-img:hover img {
   transform: translateY(-20px);
 }
+
 
 .post-list .cat-name {
   color: #E38A90;
