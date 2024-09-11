@@ -107,7 +107,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: #1c1c1c;
+  color: black;
   font-weight: 600;
   font-family: "Unna", serif;
 }
@@ -400,8 +400,9 @@ blockquote {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 599;
   padding: 25px 0px;
+  color: black; /* Blue color */
 }
  
 .navbar-nav .nav-link:hover {
@@ -1548,4 +1549,64 @@ footer
 
 .card-container:hover .delete-btn {
   display: block; /* Show the delete button on hover */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #E38A90; /* Border color */
+  background-color: #f8f8f8;
+  width: 100%; /* Adjust as needed */
+  max-width: 400px; /* Adjust width */
+}
+
+.search-input {
+  padding: 8px 40px 8px 12px; /* Padding to make space for the icon */
+  flex: 1;
+  border: white;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search-button {
+  position: absolute;
+  right: 20px; /* Positioning the icon on the right */
+  background: none;
+  border: white;
+  color: #E38A90; /* Blue search icon */
+  cursor: pointer;
+  font-size: 16px; /* Adjust size as needed */
+  transition: color 0.3s;
+}
+
+.search-button:hover {
+  color: #475569; /* Change icon color on hover */
+}
+
+.search-container:hover {
+  background-color:#E38A90 ; /* Container changes to red on hover */
+}
+
+.search-input:focus {
+  border-color: #dc2626;
+}
+/* Keyframes for fade-in animation */
+
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add animation to your section */
+.fade-in {
+  opacity: 0; /* Set initial state */
+  animation: fadeIn 1.3s ease-in-out forwards; /* Duration and easing */
 }

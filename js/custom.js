@@ -150,3 +150,40 @@ window.addEventListener('scroll', function() {
       navbar.classList.remove('scrolled');
   }
 });
+function searchBlogs() {
+  // Get the search query
+  let searchQuery = document.getElementById('searchInput').value.toLowerCase();
+
+  // Get all blog posts
+  let posts = document.querySelectorAll('.post-grid');
+
+  // Loop through all posts and hide those that don't match the query
+  posts.forEach(function(post) {
+      let postTitle = post.getAttribute('data-title').toLowerCase();
+      if (postTitle.includes(searchQuery)) {
+          post.style.display = 'block';  // Show post
+      } else {
+          post.style.display = 'none';   // Hide post
+      }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Create an intersection observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 }); // Adjust the threshold as needed
+
+  // Select all elements with the fade-in class
+  document.querySelectorAll('.fade-in').forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+
+
