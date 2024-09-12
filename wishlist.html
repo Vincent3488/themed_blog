@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Vincify Blog</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- theme meta -->
+	<meta name="theme-name" content="revolve" />
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+	<!-- THEME CSS
+	================================================== -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<!-- Themify -->
+	<link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+	<link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
+	<link rel="stylesheet" href="plugins/slick-carousel/slick.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+	<!-- manin stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- SweetAlert2 CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+
+	<header class="header-top bg-grey justify-content-center">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-2 col-md-4 text-center d-none d-lg-block">
+					<a class="navbar-brand " href="index.html">
+						<img src="images/logo.png" alt="" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="col-lg-8 col-md-12">
+					<nav class="navbar navbar-expand-lg navigation-2 navigation">
+						<a class="navbar-brand text-uppercase d-lg-none" href="#">
+							<img src="images/logo.png" alt="" class="img-fluid">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
+							aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="ti-menu"></span>
+						</button>
+						<div class="search-container">
+							<input type="text" class="search-input" placeholder="Search...">
+							<button type="submit" class="search-button">
+							  <i class="fa fa-search"></i>
+							</button>
+						  </div>
+						  
+
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+							<ul id="menu" class="menu navbar-nav mx-auto">
+								<li class="nav-item pl-0">
+									<a class="nav-link" href="index.html">
+									  Home
+									</a>
+								  </li>
+
+								<ul id="menu" class="menu navbar-nav mx-auto d-flex">
+									<li class="nav-item">
+										<a href="about.html" class="nav-link">About</a>
+									</li>
+
+									<li class="nav-item"></li>
+										<a href="standard-fullwidth.html" class="nav-link">BLOGS</a>
+									</li>
+
+									<li class="nav-item">
+										<a href="contact.html" class="nav-link">Contact</a>
+									</li>
+
+									<li class="nav-item">
+										<a href="login.html" class="nav-link">Login</a>
+									</li>
+
+									
+
+									<li class="nav-item">
+										<a href="add-post.html" class="nav-link">Add Post</a>
+									</li>
+								</ul>
+
+								
+								
+							</ul>
+
+							<ul class="list-inline mb-0 d-block d-lg-none">
+								<li class="list-inline-item"><a href="https://www.facebook.com/vinny.deprince.96/"><i class="ti-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="https://x.com/VincentAgunda3"><i class="ti-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="https://www.linkedin.com/in/vincent-agunda-/"><i class="ti-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="https://github.com/VincentAgunda"><i class="ti-github"></i></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+
+				<div class="col-lg-2 col-md-4 col-6">
+					<div class="header-socials-2 text-right d-none d-lg-block">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><a href="https://www.facebook.com/vinny.deprince.96/"><i class="ti-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="https://x.com/VincentAgunda3"><i class="ti-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/vincent-agunda-/"><i class="ti-linkedin"></i></a></li>
+							<li class="list-inline-item"><a href="https://github.com/VincentAgunda"><i class="ti-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .wishlist-container {
+            padding: 20px;
+        }
+
+        .wishlist-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between items */
+        }
+
+        .wishlist-item {
+            border-radius: 15px;
+            overflow: hidden; /* Ensures content does not overflow the border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+            width: 300px; /* Adjust as needed */
+            background-color: #fff; /* Background color for visibility */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effect */
+            position: relative; /* Position relative for absolute positioning of the remove button */
+        }
+
+        .wishlist-item:hover {
+            transform: scale(1.05); /* Slightly enlarge item on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        }
+
+        .wishlist-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .wishlist-item h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .wishlist-item p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .wishlist-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .remove-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #dc2626;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 10; /* Ensure button is above other content */
+        }
+
+        .remove-btn:hover {
+            background-color: #b91c1c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Wishlist</h1>
+    </header>
+    <section class="wishlist-container">
+        <div class="wishlist-items" id="wishlist-content"></div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the wishlist from localStorage
+            const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+            // Create a dictionary of posts for easy access
+            const posts = {
+                post1: {
+                    img: 'images/fashion/img-1.jpg',
+                    title: 'Trip to California',
+                    link: 'https://www.expedia.com/California.d206.Destination-Travel-Guides',
+                    date: 'September 15, 2019'
+                },
+                post2: {
+                    img: 'images/fashion/img-lg-2.jpg',
+                    title: 'Ways To Reach Goals',
+                    link: 'https://www.expedia.com/California.d206.Destination-Travel-Guides',
+                    date: 'August 12, 2019'
+                },
+                post3: {
+                    img: 'images/fashion/img-7.jpg',
+                    title: 'Bridal beauty span',
+                    link: 'https://www.expedia.com/California.d206.Destination-Travel-Guides',
+                    date: 'March 2, 2019'
+                },
+                post4: {
+                    img: 'images/fashion/img-lg-3.jpg',
+                    title: 'Beautiful Arrangement of The Workplace',
+                    link: 'https://www.expedia.com/California.d206.Destination-Travel-Guides',
+                    date: 'September 12, 2019'
+                },
+                post5: {
+                    img: 'images/fashion/img-lg-1.jpg',
+                    title: 'Lets explore more',
+                    link: 'https://www.expedia.com/California.d206.Destination-Travel-Guides',
+                    date: 'September 4, 2019'
+                },
+                post6: {
+                    img: 'images/fashion/img-md-1.jpg',
+                    title: 'Feel Like Home',
+                    link: 'https://www.expedia.com/California.d206.Destination-Travel-Guides',
+                    date: 'September 15, 2019'
+                },
+                post7: {
+                    img: 'images/fashion/img-lg-4.jpg',
+                    title: 'What Type of Traveller Are You?',
+                    link: 'https://www.expedia.com/California.d206.Destination-Travel-Guides',
+                    date: 'September 15, 2019'
+                }
+            };
+
+            // Render the wishlist items
+            const wishlistContent = document.getElementById('wishlist-content');
+            wishlist.forEach(postId => {
+                const post = posts[postId];
+                if (post) {
+                    const postHTML = `
+                        <div class="wishlist-item">
+                            <button class="remove-btn" data-id="${postId}">Remove</button>
+                            <a href="${post.link}" target="_blank">
+                                <img src="${post.img}" alt="${post.title}">
+                                <h2>${post.title}</h2>
+                                <p>${post.date}</p>
+                            </a>
+                        </div>
+                    `;
+                    wishlistContent.innerHTML += postHTML;
+                }
+            });
+
+            // Handle remove button clicks
+            wishlistContent.addEventListener('click', function(event) {
+                if (event.target.classList.contains('remove-btn')) {
+                    const idToRemove = event.target.getAttribute('data-id');
+                    const updatedWishlist = wishlist.filter(id => id !== idToRemove);
+                    localStorage.setItem('wishlist', JSON.stringify(updatedWishlist));
+                    window.location.reload(); // Refresh the page to update the UI
+                }
+            });
+        });
+    </script>
+
+    <section class="footer-2 section-padding gray-bg pb-5"></section>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="subscribe-footer text-center">
+						<div class="form-group mb-0">
+							<h2 class="mb-3">Subscribe Newsletter</h2>
+							<p class="mb-4">Subscribe my Newsletter for new blog posts , tips and info.
+							<p>
+							<div class="form-group form-row align-items-center mb-0">
+								<div class="col-sm-9">
+									<input type="email" class="form-control" placeholder="Email Address">
+								</div>
+								<div class="col-sm-3">
+									<a href="#" class="btn btn-dark ">Subscribe</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-btm mt-5 pt-4 border-top">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="list-inline footer-socials-2 text-center">
+							<li class="list-inline-item"><a href="#">Privacy policy</a></li>
+							<li class="list-inline-item"><a href="#">Support</a></li>
+							<li class="list-inline-item"><a href="about.html">About</a></li>
+							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
+							<li class="list-inline-item"><a href="#">Terms</a></li>
+							<li class="list-inline-item"><a href="fashion.html">Category</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="copyright text-center ">
+							@ copyright all reserved to <a href="https://github.com/VincentAgunda">vinci.com</a>-2024 Distribution <a
+								href="https://github.com/VincentAgunda">Vincify</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <script src="plugins/jquery/jquery.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="plugins/bootstrap/js/popper.min.js"></script>
+	<!-- Owl caeousel -->
+	<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script src="plugins/slick-carousel/slick.min.js"></script>
+	<script src="plugins/magnific-popup/magnific-popup.js"></script>
+	<!-- Instagram Feed Js -->
+	<script src="plugins/instafeed-js/instafeed.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+	<script src="plugins/google-map/gmap.js"></script>
+	<!-- main js -->
+	<script src="js/custom.js"></script>
+	<script src="js/wishlist.js"></script>
+	<!-- SweetAlert2 JS -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

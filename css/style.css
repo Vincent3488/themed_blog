@@ -276,13 +276,13 @@ blockquote {
 
 .btn-grey {
   background: #2b8282;
-  border-color: #E38A90;
+  border-color: #2b8282;
   color: #fff;
 }
 
 .btn-grey:hover {
   background: transparent;
-  border-color: #a3777a;
+  border-color: #2b8282;
   color: #000;
 }
 
@@ -1612,4 +1612,43 @@ footer
 .fade-in {
   opacity: 0; /* Set initial state */
   animation: fadeIn 1.3s ease-in-out forwards; /* Duration and easing */
+}
+.post-grid {
+  position: relative;
+  overflow: hidden;
+}
+
+.wishlist-btn {
+  border-radius: 15px;
+  padding: 10px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 350ms;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border: 1px solid transparent;
+}
+
+.post-grid:hover .wishlist-btn {
+  opacity: 1;
+}
+.add-to-wishlist-btn {
+  background-color: #292931; /* Your preferred color */
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-color: white;
+}
+
+.add-to-wishlist-btn:hover {
+  background-color: #f87171; /* Darker shade on hover */
+}
+
+.add-to-wishlist-btn:disabled {
+  background-color: #475569; /* Disabled state color */
+  cursor: not-allowed;
 }
