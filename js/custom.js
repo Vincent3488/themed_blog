@@ -185,5 +185,42 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// Get the form element by ID
+const form = document.getElementById('contact-form');
+
+// Listen for the form submission event
+form.addEventListener('submit', async function (event) {
+    event.preventDefault(); // Prevent the form from submitting the default way
+
+    // Create a FormData object from the form
+    const formData = new FormData(form);
+
+    // Convert the FormData object into a URL-encoded string
+    const formEntries = new URLSearchParams(formData).toString();
+
+    // Send the form data using Fetch API
+    try {
+        const response = await fetch('/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: formEntries
+        });
+
+        // Check if the submission was successful
+        if (response.ok) {
+            alert('Form submitted successfully!');
+            // Optionally redirect to a thank you page
+            window.location.href = '/thank-you';
+        } else {
+            alert('There was a problem submitting the form.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('There was an error submitting the form.');
+    }
+});
+
 
 
