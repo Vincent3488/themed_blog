@@ -54,7 +54,7 @@ Here’s a preview of how the blog looks on desktop:
 
 ## Live Demo
 
-Check out the live demo of the blog [here](link_to_live_demo).
+Check out the live demo of the blog [here]https://vincified.netlify.app/.
 
 ## Installation
 
@@ -63,4 +63,4 @@ To get a local copy up and running, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Vincent3488/vincify-blog.git
+   git clone https://github.com/VincentAgunda/themed_blog

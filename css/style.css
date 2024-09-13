@@ -165,7 +165,8 @@ body {
   height: 100%;
 }
 .header-top .navbar-brand img {
-  border-radius: 10px;   
+  border-radius: 10px; 
+    
 }
 .contact-section img {
   border-radius: 20px;
@@ -256,12 +257,13 @@ blockquote {
 
 .btn-primary {
   background: #f87171;
+  border-color: white;
 }
 
 .btn-primary:hover {
   background: #000;
   color: #fff;
-  border-color: #000;
+  
 }
 
 .btn-dark {
@@ -1408,6 +1410,7 @@ footer
 }
 
 
+
 .footer-section .copyright {
   padding-top: 20px;
   margin-top: 20px;
@@ -1562,7 +1565,7 @@ footer
   border: 1px solid #E38A90; /* Border color */
   background-color: #f8f8f8;
   width: 100%; /* Adjust as needed */
-  max-width: 400px; /* Adjust width */
+  max-width: 600px; /* Adjust width */
 }
 
 .search-input {

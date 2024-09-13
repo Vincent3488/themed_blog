@@ -222,6 +222,25 @@ form.addEventListener('submit', async function (event) {
     }
 });
 
+document.getElementById('search-input').addEventListener('input', function () {
+  const searchTerm = this.value.toLowerCase();
+  const posts = document.querySelectorAll('.post-grid');
+
+  posts.forEach(post => {
+      const postContent = post.textContent.toLowerCase();
+
+      if (postContent.includes(searchTerm)) {
+          // Highlight or show matching post
+          post.style.display = 'block'; // Ensure it's visible
+
+          // Scroll smoothly to the matched post
+          post.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+          // Hide non-matching posts
+          post.style.display = 'none';
+      }
+  });
+});
 
 
 

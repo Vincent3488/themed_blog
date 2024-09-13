@@ -222,16 +222,11 @@
                                 </div>
                                 <h3 class="mt-5 mb-3">Enjoying the view of summer</h3>
 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum delectus
-                                    exercitationem
-                                    natus quidem enim error suscipit. Iure cupiditate nobis quaerat consectetur! Vero
-                                    aliquam,
-                                    amet ipsum ullam reiciendis nostrum voluptate accusantium provident ut blanditiis
-                                    incidunt. </p>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab ratione animi
-                                    nobis in et consequatur
-                                    earum modi repellendus, qui, non debitis pariatur tempora consequuntur!</p>
+                                <p>Embrace the beauty of summer as you savor the vibrant colors, warm sunlight,
+                                     and the tranquil moments that
+                                     define the season. Whether it's lounging by the beach,  </p>
+                                     <p>exploring scenic landscapes, or simply relaxing in the sunshine, summer's view offers a refreshing escape and a chance to recharge your spirit."
+                                </p>
                             </div>
 
                             <div class="post-tags py-4">
@@ -268,7 +263,7 @@
                         </div>
 
                         <div class="author-content pl-4">
-                            <h4 class="mb-3"><a href="#" title="" rel="author" class="text-capitalize">Themefisher</a>
+                            <h4 class="mb-3"><a href="#" title="" rel="author" class="text-capitalize">Lone Traveler</a>
                             </h4>
                             <p>Hey there. My name is Vincent. I was born with the love for traveling. I also love taking
                                 photos with my phone in order to capture moment..</p>
@@ -350,8 +345,7 @@
                                         class="ti-time mr-2"></i>June 7, 2019 </span>
 
                                 <div class="comment-content mt-3">
-                                    <p>Lorem ipsum dolor sit amet, usu ut perfecto postulant deterruisset, libris causae
-                                        volutpat at est, ius id modus laoreet urbanitas. Mel ei delenit dolores.</p>
+                                    <p>Your blog post is both informative and engaging</p>
                                 </div>
                                 <div class="comment-meta mt-4 mt-lg-0 mt-md-0">
                                     <a href="#" class="text-underline ">Reply</a>
@@ -401,6 +395,52 @@
                             value="Submit Message">
                     </form>
 
+                    <div id="comments-container" class="mt-5"></div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const form = document.getElementById('comment-form');
+                            const submitButton = document.getElementById('submit_contact');
+                        
+                            form.addEventListener('submit', function(event) {
+                                event.preventDefault(); // Prevent the default form submission
+                        
+                                // Get form values
+                                const comment = document.getElementById('comment').value.trim();
+                                const name = document.getElementById('name').value.trim();
+                                const email = document.getElementById('mail').value.trim();
+                        
+                                // Basic validation
+                                if (comment === '' || name === '' || email === '') {
+                                    alert('Please fill out all fields.');
+                                    return;
+                                }
+                        
+                                // Prepare the comment data
+                                const commentData = {
+                                    comment: comment,
+                                    name: name,
+                                    email: email
+                                };
+                        
+                                // Retrieve existing comments from local storage
+                                let comments = JSON.parse(localStorage.getItem('comments')) || [];
+                        
+                                // Add new comment to the array
+                                comments.push(commentData);
+                        
+                                // Save the updated comments array back to local storage
+                                localStorage.setItem('comments', JSON.stringify(comments));
+                        
+                                // Clear the form
+                                form.reset();
+                        
+                                // Display success message
+                                alert('Thank you for your comment!');
+                            });
+                        });
+                        </script>
+                        
+
                 </div>
             </div>
         </div>
@@ -409,51 +449,67 @@
 
     <!--footer start-->
     <section class="footer-2 section-padding gray-bg pb-5">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="subscribe-footer text-center">
-						<div class="form-group mb-0">
-							<h2 class="mb-3">Subscribe Newsletter</h2>
-							<p class="mb-4">Subscribe my Newsletter for new blog posts , tips and info.
-							<p>
-							<div class="form-group form-row align-items-center mb-0">
-								<div class="col-sm-9">
-									<input type="email" class="form-control" placeholder="Email Address">
-								</div>
-								<div class="col-sm-3">
-									<a href="#" class="btn btn-dark ">Subscribe</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="subscribe-footer text-center">
+                        <div class="form-group mb-0">
+                            <h2 class="mb-3">Subscribe Newsletter</h2>
+                            <p class="mb-4">Subscribe to my Newsletter for new blog posts, tips, and info.</p>
+                            <div class="form-group form-row align-items-center mb-0">
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="emailInput" placeholder="Email Address">
+                                </div>
+                                <div class="col-sm-3">
+                                    <button type="button" class="btn btn-dark" id="subscribeButton">Subscribe</button>
+                                </div>
+                            </div>
+                            <p id="message" class="mt-3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<div class="footer-btm mt-5 pt-4 border-top">
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="list-inline footer-socials-2 text-center">
-							<li class="list-inline-item"><a href="#">Privacy policy</a></li>
-							<li class="list-inline-item"><a href="#">Support</a></li>
-							<li class="list-inline-item"><a href="about.html">About</a></li>
-							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="#">Terms</a></li>
-							<li class="list-inline-item"><a href="fashion.html">Category</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-6">
-						<div class="copyright text-center ">
-							@ copyright all reserved to <a href="https://github.com/VincentAgunda">vinci.com</a>-2024 Distribution <a
-								href="https://github.com/VincentAgunda">Vincify</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <!-- Footer Bottom -->
+        <div class="footer-btm mt-5 pt-4 border-top">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline footer-socials-2 text-center">
+                        <li class="list-inline-item"><a href="#">Privacy policy</a></li>
+                        <li class="list-inline-item"><a href="#">Support</a></li>
+                        <li class="list-inline-item"><a href="about.html">About</a></li>
+                        <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                        <li class="list-inline-item"><a href="#">Terms</a></li>
+                        <li class="list-inline-item"><a href="fashion.html">Category</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="copyright text-center">
+                        @ copyright all reserved to <a href="https://github.com/VincentAgunda">vinci.com</a>-2024 Distribution <a href="https://github.com/VincentAgunda">Vincify</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('subscribeButton').addEventListener('click', function() {
+            var emailInput = document.getElementById('emailInput');
+            var messageElement = document.getElementById('message');
+
+            if (emailInput.value) {
+                messageElement.textContent = 'Successfully subscribed!';
+                messageElement.style.color = 'green';
+                emailInput.value = ''; // Clear the input field
+            } else {
+                messageElement.textContent = 'Please enter a valid email address.';
+                messageElement.style.color = 'red';
+            }
+        });
+    </script>
 
     
 
