@@ -1254,10 +1254,10 @@ overlay search
   height: 50px;
   display: inline-block;
   text-align: center;
-  color: black;
+  color: white;
   padding-top: 12px;
   margin-bottom: 5px;
-  background: #bb8dae;
+  background: #292931;
   border-radius: 10px;
 }
 

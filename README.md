@@ -35,7 +35,8 @@ A dynamic and responsive blog post website designed with modern UI/UX principles
 
 Here’s a preview of how the blog looks on mobile devices:
 
-![Mobile View](link_to_mobile_view_screenshot)
+![Mobile View](images/WhatsApp Image 2024-09-16 at 19.51.31_8c121ee5.jpg)
+<video controls src="WhatsApp Video 2024-09-16 at 19.49.02_3ceee831.mp4" title="Video Demo"></video>
 
 ### Key Mobile Features:
 - Collapsible navigation menu.
