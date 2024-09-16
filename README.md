@@ -36,7 +36,7 @@ A dynamic and responsive blog post website designed with modern UI/UX principles
 Here’s a preview of how the blog looks on mobile devices:
 
 ![Mobile View](images/mobile.jpg)
-<video controls src="WhatsApp Video 2024-09-16 at 19.49.02_3ceee831.mp4" title="Video Demo"></video>
+<video controls src="mobile.mp4" title="Video Demo"></video>
 
 ### Key Mobile Features:
 - Collapsible navigation menu.
@@ -47,7 +47,8 @@ Here’s a preview of how the blog looks on mobile devices:
 
 Here’s a preview of how the blog looks on desktop:
 
-![Desktop View](link_to_desktop_view_screenshot)
+![Desktop View](images/image.png)
+               (images/image1.png)
 
 ### Key Desktop Features:
 - Full-width layout for better content display.
