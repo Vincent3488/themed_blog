@@ -48,7 +48,7 @@ Here’s a preview of how the blog looks on mobile devices:
 Here’s a preview of how the blog looks on desktop:
 
 ![Desktop View](images/image.png)
-               (images/image1.png)
+![Desktop View](images/image1.png)
 
 ### Key Desktop Features:
 - Full-width layout for better content display.
