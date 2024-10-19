@@ -242,5 +242,30 @@ document.getElementById('search-input').addEventListener('input', function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('search-input');
+  const posts = document.querySelectorAll('.post-grid'); // Select all posts
+
+  searchInput.addEventListener('input', function() {
+      const query = searchInput.value.toLowerCase();
+
+      posts.forEach(post => {
+          const title = post.querySelector('.post-title a').textContent.toLowerCase();
+          const description = post.querySelector('.post-content p').textContent.toLowerCase();
+
+          if (title.includes(query) || description.includes(query)) {
+              post.style.display = 'block'; // Show post if it matches the search query
+          } else {
+              post.style.display = 'none'; // Hide post if it does not match
+          }
+      });
+
+      // Scroll to the first visible post (if any)
+      const firstVisiblePost = document.querySelector('.post-grid:not([style*="display: none"])');
+      if (firstVisiblePost) {
+          firstVisiblePost.scrollIntoView({ behavior: 'smooth' });
+      }
+  });
+});
 
 
