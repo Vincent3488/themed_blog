@@ -113,33 +113,41 @@
 	</header>
 
     <!-- Main Content -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="register-form">
-                        <h2 class="text-center">Register</h2>
-                        <form action="/register" method="POST">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" required>
-                            </div>
-                            <button type="submit" class="btn btn-dark btn-block">Register</button>
-                        </form>
-                        <p class="text-center mt-3">Already have an account? <a href="login.html">Login here</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section class="section-padding">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="register-form">
+						<h2 class="text-center">Register</h2>
+						<form action="/register" method="POST" id="registration-form">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="name" name="name" required>
+							</div>
+							<div class="form-group">
+								<label for="email">Email address</label>
+								<input type="email" class="form-control" id="email" name="email" required>
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password" name="password" required>
+							</div>
+							<button type="submit" class="btn btn-dark btn-block">Register</button>
+						</form>
+						<p class="text-center mt-3">Already have an account? <a href="login.html">Login here</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Popup for displaying messages -->
+	<div id="popup" style="display: none;">
+		<div id="popup-message"></div>
+		<button id="popup-close">Close</button>
+	</div>
+	
+	
 
     <section class="footer-2 section-padding gray-bg pb-5">
 		<div class="container">
